@@ -15,8 +15,12 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_open).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //生成二维码
                 Intent intent = new Intent(MainActivity.this, Generatectivity.class);
                 startActivity(intent);
+                //扫描二维码
+              //  Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
+                //startActivity(intent);
             }
         });
     }
